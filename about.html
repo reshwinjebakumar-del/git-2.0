@@ -262,4 +262,80 @@
     </div>
   </body>
   <script src="./script.js"></script>
+  <!-- Schema.org JSON-LD for About Page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph":[
+
+    {
+      "@type":"Organization",
+      "@id":"https://riqardoproducts.com/#organization",
+      "name":"Riqardo Products",
+      "url":"https://riqardoproducts.com/",
+      "logo":"https://riqardoproducts.com/images/Riqardo-01.png",
+      "description":"Riqardo Products is a premium beverage brand offering instant coffee, tea premixes, and specialty drinks made from carefully selected ingredients for coffee and tea lovers.",
+      "telephone":"+91-9633730600",
+      "email":"info@riqardoproducts.com",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"TC 74/312-2",
+        "addressLocality":"Trivandrum",
+        "addressRegion":"Kerala",
+        "postalCode":"695026",
+        "addressCountry":"IN"
+      },
+      "sameAs":[
+        "https://www.instagram.com/riqardo_products/",
+        "https://wa.me/919633730600"
+      ]
+    },
+
+    {
+      "@type":"WebSite",
+      "@id":"https://riqardoproducts.com/#website",
+      "url":"https://riqardoproducts.com/",
+      "name":"Riqardo Products",
+      "publisher":{
+        "@id":"https://riqardoproducts.com/#organization"
+      }
+    },
+
+    {
+      "@type":"AboutPage",
+      "@id":"https://riqardoproducts.com/about.html",
+      "url":"https://riqardoproducts.com/about.html",
+      "name":"About Riqardo Products",
+      "headline":"About Riqardo Products",
+      "description":"Learn about Riqardo Products, our mission, premium instant coffee and tea products, commitment to quality, customer satisfaction, and passion for delivering exceptional beverages.",
+      "isPartOf":{
+        "@id":"https://riqardoproducts.com/#website"
+      },
+      "about":{
+        "@id":"https://riqardoproducts.com/#organization"
+      },
+      "inLanguage":"en"
+    },
+
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {
+          "@type":"ListItem",
+          "position":1,
+          "name":"Home",
+          "item":"https://riqardoproducts.com/"
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "name":"About Us",
+          "item":"https://riqardoproducts.com/about.html"
+        }
+      ]
+    }
+
+  ]
+}
+</script>
 </html>
